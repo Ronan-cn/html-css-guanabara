@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumb-video {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.curso-completo {
+  color: white;
+  text-decoration: none;
+}
+
+.curso-completo:hover {
+  text-decoration: underline;
+}
