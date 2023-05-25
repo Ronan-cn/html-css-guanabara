@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -28,6 +29,8 @@ ul {
   background-color: black;
   color: white;
   padding: 10px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 article {
