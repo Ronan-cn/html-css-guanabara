@@ -1,0 +1,100 @@
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+-----------------------------------------------
+Celular: de 320px até 480px
+Tablets: de 481px até 768px
+Telas pequenas, Notebooks: de 769px até 1024px
+Telas grandes, Desktops: de 1025px até 1200px
+Telas muito grandes, TV: de 1201px pra cima
+-----------------------------------------------
+*/
+
+@media print {
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  body {
+    background-image: url("../imagens/back-print.jpg"); /* Desnecessário para impressora*/
+  }
+
+  main {
+    border: 2px solid black;
+  }
+
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /*TABLET*/
+  body {
+    background-image: url("../imagens/back-tablet.jpg");
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#desktop {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* DESKTOP */
+  body {
+    background-image: url("../imagens/back-pc.jpg");
+    background-size: contain;
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#desktop {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  /*TELAS GRANDES */
+  body {
+    background-image: url("../imagens/back-tv.jpg");
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#desktop {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
+}
