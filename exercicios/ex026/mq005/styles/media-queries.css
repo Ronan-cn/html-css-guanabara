@@ -1,0 +1,22 @@
+@media screen and (min-width: 480px) {
+  span#burguer {
+    display: none;
+  }
+
+  menu {
+    display: block;
+  }
+
+  menu > ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  menu > ul > li > a {
+    border: none;
+  }
+
+  main {
+    max-width: 800px;
+  }
+}
